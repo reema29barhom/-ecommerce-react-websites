@@ -4,7 +4,7 @@ import { getProductById } from "../data/products";
 const CartContext = createContext(null);
 
 export default function CartProvider({ children }) {
-  const [cartItems, setCartItems] = useState([]); }
+  const [cartItems, setCartItems] = useState([]); // {id: 2, quantity: 7}
 
   function addToCart(productId) {
     const existing = cartItems.find((item) => item.id === productId);
